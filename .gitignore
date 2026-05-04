@@ -1,0 +1,15 @@
+# Sistema
+.DS_Store
+
+# Node (se usar depois)
+node_modules/
+
+# Logs
+*.log
+
+
+# Arquivos sensíveis
+.env
+
+# IDE
+.vscode/
