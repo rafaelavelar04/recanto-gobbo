@@ -1,0 +1,58 @@
+/* css/layout/header.css */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: var(--container-width);
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-menu a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: var(--color-secondary);
+}
+
+.menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 2rem;
+
+
+/* ================================
+   LINK ATIVO DO MENU
+   Indica qual página está aberta
+================================ */
+.nav-menu a.active {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+}

@@ -1,0 +1,12 @@
+/* css/base/variables.css */
+
+:root {
+  --color-primary: #3f4f2f;
+  --color-secondary: #d8c29d;
+  --color-bg: #f8f5ef;
+  --color-text: #2f2f2f;
+
+  --font-main: Arial, sans-serif;
+
+  --container-width: 1200px;
+}
