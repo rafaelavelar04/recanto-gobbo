@@ -1,27 +1,38 @@
 /* ================================
    MENU HAMBÚRGUER
-   Controla a abertura e fechamento do menu mobile
+   Controla abertura e fechamento do menu mobile
 ================================ */
 
-// Seleciona o botão do menu hambúrguer
+// Seleciona o botão hambúrguer
 const menuToggle = document.getElementById("menu-toggle");
 
-// Seleciona a lista de links do menu
+// Seleciona o menu de navegação
 const navMenu = document.getElementById("nav-menu");
 
-// Seleciona todos os links dentro do menu
+// Seleciona todos os links do menu
 const navLinks = document.querySelectorAll(".nav-menu a");
 
-// Ao clicar no botão hambúrguer, abre ou fecha o menu
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  document.body.classList.toggle("menu-open");
-});
+// Verifica se os elementos existem
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", () => {
+    // Adiciona/remove classe no menu
+    navMenu.classList.toggle("active");
 
-// Ao clicar em qualquer link do menu, fecha o menu
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("active");
-    document.body.classList.remove("menu-open");
+    // Adiciona/remove classe no body
+    document.body.classList.toggle("menu-open");
+
+    // Verifica se abriu
+    const isOpen = navMenu.classList.contains("active");
+
+    // Troca o ícone
+    menuToggle.textContent = isOpen ? "×" : "☰";
   });
-});
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      menuToggle.textContent = "☰";
+    });
+  });
+}

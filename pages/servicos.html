@@ -10,31 +10,60 @@
   <!-- Título da página -->
   <title>Serviços | Recanto Gobbo</title>
 
+  <!-- Fontes do projeto: Playfair Display e Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" 
+    rel="stylesheet"
+  >
+
   <!-- CSS principal -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="servicos">
 
-  <!-- Header fixo do site -->
+  <!-- Header principal do site -->
   <header class="header">
     <nav class="navbar">
 
-      <!-- Logo / nome da marca -->
-      <a href="../index.html" class="logo">Recanto Gobbo</a>
+      <!-- Logo principal -->
+      <a href="../index.html" class="logo">
+        <img 
+          src="../assets/logo-recanto-gobbo.png" 
+          alt="Logo Recanto Gobbo"
+          class="logo-image"
+        >
+      </a>
 
-      <!-- Botão do menu hambúrguer no mobile -->
+      <!-- Menu principal -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../pages/sobre.html">Sobre o Recanto</a></li>
+        <li><a href="../pages/produtos.html">Produtos</a></li>
+        <li><a href="../pages/servicos.html" class="active">Serviços</a></li>
+        <li><a href="../pages/contato.html">Contato</a></li>
+      </ul>
+
+      <!-- Frase institucional do header desktop -->
+      <div class="header-phrase">
+        <!-- Ícone decorativo da frase do header -->
+        <img 
+          src="../assets/icone-header.png" 
+            alt="" 
+            class="header-icon"
+        >
+        <div>
+          <strong>A vida no campo</strong>
+          <p>é mais simples e cheia de propósito.</p>
+        </div>
+      </div>
+
+      <!-- Botão hambúrguer mobile -->
       <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
         ☰
       </button>
-
-      <!-- Menu de navegação -->
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
 
     </nav>
   </header>
@@ -47,30 +76,75 @@
     </section>
   </main>
 
-  <!-- Footer principal do site -->
-  <footer class="footer">
+<!-- Footer principal do site -->
+<footer class="footer">
+
+  <!-- Camada por cima da imagem de fundo para melhorar leitura -->
+  <div class="footer-overlay">
+
+    <!-- Container principal do footer -->
     <div class="footer-container">
 
-      <!-- Nome da marca -->
-      <p class="footer-logo">Recanto Gobbo</p>
+      <!-- Coluna da marca -->
+      <div class="footer-brand">
+        <img 
+          src="../assets/logo-recanto-gobbo.png" 
+          alt="Logo Recanto Gobbo"
+          class="footer-logo-image"
+        >
 
-      <!-- Texto institucional simples -->
-      <p class="footer-text">
-        Produtos artesanais com tradição e qualidade.
-      </p>
+        <p>
+          Produtos artesanais com tradição, qualidade e sabor do interior.
+        </p>
+      </div>
 
-      <!-- Links rápidos do footer -->
-      <div class="footer-links">
-        <a href="../index.html">Home</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="contato.html">Contato</a>
+      <!-- Coluna de navegação -->
+      <div class="footer-column">
+        <h3>Navegação</h3>
+
+        <nav class="footer-links">
+          <a href="../index.html">Início</a>
+          <a href="sobre.html">Sobre o Recanto</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+
+      <!-- Coluna de contato -->
+      <div class="footer-column">
+        <h3>Contato</h3>
+
+        <div class="footer-contact">
+          <p>WhatsApp: (16) 99770-3595</p>
+          <p>Email: gobbonetto@gmail.com</p>
+          <p>Localização: Gavião Peixoto, SP</p>
+        </div>
+      </div>
+
+      <!-- Coluna de redes sociais -->
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="WhatsApp">WhatsApp</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+        </div>
       </div>
 
     </div>
-  </footer>
 
-  <!-- JavaScript principal -->
-  <script src="../js/script.js"></script>
+    <!-- Base inferior do footer -->
+    <div class="footer-bottom">
+      <p>© 2026 Recanto Gobbo</p>
+      <p>CNPJ: 27.228.351/0001-00</p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- JavaScript principal -->
+<script src="../js/script.js"></script>
 </body>
 </html>
